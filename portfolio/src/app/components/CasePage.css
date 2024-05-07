@@ -1,0 +1,135 @@
+.caseDoc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.docHeader {
+    margin-top: 8vh;
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .backButton {
+        width: fit-content;
+        text-decoration: none;
+        color:darkslategray;
+        font-family: var(--font-manrope), sans-serif;
+        font-size: 12pt;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 2vh;
+        b{
+            margin-left: .25rem;
+        }
+    }
+    h1 {
+        width: fit-content;
+        margin-bottom: 4vh;
+    }
+    .graphic{
+        width: 95%;
+        margin: auto;
+    }
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2vh;
+        p{
+            margin: 0;
+        }
+    }
+}
+
+p{
+    font-size: 14pt;
+    font-family: var(--font-manrope), sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #545454;
+    b {
+        font-weight: 600;
+    }
+}
+
+h1{
+    font-size: 32pt;
+    font-family: var(--font-manrope), serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(30, 51, 51);
+    margin-top: 0;
+    text-decoration: underline #5DB7DE;
+}
+
+h2{
+    font-size: 24pt;
+    font-family: var(--font-manrope), serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(30, 51, 51);
+    margin-top: 0;
+    text-decoration: underline #5DB7DE;
+}
+
+h3{
+    font-size: 16pt;
+    font-family: var(--font-manrope), serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: darkslategray;
+}
+.subtitle {
+    /* margin-top: 8vh; */
+    font-size: 18pt;
+}
+
+.section {
+    width: 55vw;
+    margin-bottom: 1vh;
+    margin-top: 6vh;
+}
+
+.contSection {
+    width: 55vw;
+    margin-bottom: 1vh;
+}
+
+.stack {
+    margin-bottom: 2vh;
+    .title, .details {
+        margin: auto;
+    }
+}
+
+.gridCard {
+    .ind {
+        font-size: 24px;
+    }
+    .header, .body {
+        margin: 0;
+    }
+}
+
+.graphic {
+    width: 75vw;
+    overflow: hidden;
+    border-radius: 30px;
+    /* margin: 3rem 0 0rem 0; */
+}
+
+
+.rectGraphic {
+    width: 75vw;
+    overflow: hidden; 
+}

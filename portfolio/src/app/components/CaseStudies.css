@@ -1,0 +1,51 @@
+.sectionHeader {
+    h1 {
+        font-family: var(--font-manrope), serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        text-decoration: underline #5DB7DE;
+    }
+}
+
+.grid {
+    width: 95%;
+}
+
+.caseCard {
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow:hidden;
+    transition: transform 300ms;
+    .cardImg {
+        width:100%;
+        aspect-ratio: 16/10;
+        /* background-color: lightgrey; */
+        flex: 0 1 auto;
+        /* border-radius: 10px; */
+    }
+    .cardDesc {
+        /* height: ; */
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        flex: 1 1 auto;
+        margin-left: 1rem;
+        height: 8rem;
+        .cardTitle {
+            font-family: var(--font-manrope), sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+        }
+    }
+}
+
+.caseCard:hover {
+    transform: translateY(-1.75rem);
+
+}
