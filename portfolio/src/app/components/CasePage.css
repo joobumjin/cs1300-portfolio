@@ -12,20 +12,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .backButton {
-        width: fit-content;
-        text-decoration: none;
-        color:darkslategray;
-        font-family: var(--font-manrope), sans-serif;
-        font-size: 12pt;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        margin-bottom: 2vh;
-        b{
-            margin-left: .25rem;
-        }
-    }
     h1 {
         width: fit-content;
         margin-bottom: 4vh;
@@ -34,14 +20,30 @@
         width: 95%;
         margin: auto;
     }
-    .info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 2vh;
-        p{
-            margin: 0;
-        }
+}
+
+.backButton {
+    width: fit-content;
+    text-decoration: none;
+    color:darkslategray;
+    font-family: var(--font-manrope), sans-serif;
+    font-size: 12pt;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 2vh;
+    b{
+        margin-left: .25rem;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+    p{
+        margin: 0;
     }
 }
 
