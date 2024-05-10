@@ -5,47 +5,47 @@
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-evenly;
-    .profileIntro, .profileBody {
-        width: 50%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-content: center; 
-        align-items: center;    
-        height: fit-content;
-        p {
-            width: fit-content;
-            max-width:40rem;
-        }
-    }
-    .profileIntro {
-        p{
-            font-size: 50pt;
-            font-family: var(--font-pt_serif), serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-    }
-    .profileBody {
-        .aboutMe{
-            p {
-                font-size: x-large;
-                font-family: var(--font-manrope), sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 300;
-                font-style: normal;
-            }
-            .profileFooter {
-                display: flex;
-                flex-flow: row;
-                width: 100%;
-                p {
-                    font-size: medium;
-                    font-weight: 600;
-                }
-            }
-        }
+}
+
+.profileIntro, .profileBody {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;    
+    height: fit-content;
+    p {
+        width: fit-content;
+        max-width:40rem;
     }
 }
 
+.profileIntro {
+    p{
+        font-size: 50pt;
+        font-family: var(--font-pt_serif), serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.aboutMe{
+    p {
+        font-size: x-large;
+        font-family: var(--font-manrope), sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .profileFooter {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        p {
+            font-size: medium;
+            font-weight: 600;
+        }
+    }
+}
