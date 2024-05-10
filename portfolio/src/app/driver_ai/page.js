@@ -34,8 +34,8 @@ function DriverAI() {
                     Overview
                 </h2>
                 <p className="main">
-                    During April 2024, I worked with startup company Driver AI through my UIUX course at Brown. 
-                    The project I worked on revolved around creating Notes, or code documentation files created by Driver AI's LLM (Large Language Model).
+                    {"During April 2024, I worked with startup company Driver AI through my UIUX course at Brown. \
+                        The project I worked on revolved around creating Notes, or code documentation files created by Driver AI's LLM (Large Language Model)."}
                 </p>
 
                 {/* <p className="context main">
@@ -233,7 +233,7 @@ function DriverAI() {
                 </p>
 
                 <uo>
-                    <li>The star symbol was too generic and didn't clearly communicate its purpose.</li>
+                    <li>{"The star symbol was too generic and didn't clearly communicate its purpose."}</li>
                     <li>Multiple suggestions might be harder to comprehend</li>
                 </uo>
             </div>
@@ -249,8 +249,8 @@ function DriverAI() {
 
             <div className="contSection">
                 <p className="main">
-                    I also spent a lot of time developing the guided, new user workflow. I'll refer to it as the "Don't Know Where to Start?" flow, because of the button name. 
-                    The original LoFi had simply just used the questions to select relevant keywords and a basic starter prompt:
+                    {"I also spent a lot of time developing the guided, new user workflow. I'll refer to it as the \"Don't Know Where to Start?\" flow, because of the button name. \
+                        The original LoFi had simply just used the questions to select relevant keywords and a basic starter prompt:"}
                 </p>
             </div>
 

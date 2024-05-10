@@ -49,7 +49,7 @@ function ABTest() {
                     Upon closer analysis, I determined that this difficulty was most likely rooted in 2 different areas: finding the appropriate appointment and then using the interface to book that appointment.
                 </p>
                 <p className="main">
-                    Before we dive in, let's first check out what the interface looked like before any changes.
+                    {"Before we dive in, let's first check out what the interface looked like before any changes."}
                 </p>
             </div>
 

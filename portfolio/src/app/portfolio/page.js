@@ -116,14 +116,14 @@ function PortfolioDev() {
                     Updates
                 </h3>
                 <p className="main">
-                    The first point of improvement is naturally in simply keeping it up to date. As I get more expeirence under my belt, I can't wait to detail my work here.
+                    {"The first point of improvement is naturally in simply keeping it up to date. As I get more expeirence under my belt, I can't wait to detail my work here."}
                 </p>
 
                 <h3>
                     Themeing
                 </h3>
                 <p className="main">
-                    With some more time, I'd also love to experiment with aesthetics and designs that are too time-intensive for this project's turn around. 
+                   {"With some more time, I'd also love to experiment with aesthetics and designs that are too time-intensive for this project's turn around. "}
                 </p>
 
             </div>
