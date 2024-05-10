@@ -1,6 +1,8 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Image from 'next/image'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import IconButton from '@mui/material/IconButton';
+
 
 function DocHeader(props) {
     return (

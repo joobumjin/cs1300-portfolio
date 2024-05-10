@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import { Manrope, PT_Serif } from "next/font/google";
 
 const manrope = Manrope({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.variable} ${pt_serif.variable}`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

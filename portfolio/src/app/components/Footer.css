@@ -1,0 +1,54 @@
+.footer {
+    margin: 5vh 0 0 0;
+    width: 100vw;
+    min-height: 20vh;
+    background-color: rgb(244, 241, 241);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.innerFooter {
+    width: 85%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-manrope), sans-serif;
+    font-style: normal;
+    color: #545454;
+    b {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .lastLine {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .madeBy {
+            margin-top: 1vh;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            justify-content: space-around;
+            p, .codeIcon {
+                margin-right: .1rem;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .contacts {
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .icon, a{
+                height: fit-content;
+            }
+        }
+    }
+}
