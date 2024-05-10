@@ -107,8 +107,6 @@ function DriverAI() {
                 <GraphicSplitLeft 
                     graphic={GuidedStart}
                     alt={"A guided workflow of easy to answer questions helps new users get started"}
-                    // unoptimized={true}
-                    priority={true}
                     title={"Guided New User Experience"}
                     desc={"Giving users a guided set of questions helps them find exactly what prompt they need. \
                             New users might not have expeirence with finding the right prompts for an LLM. \
@@ -118,8 +116,6 @@ function DriverAI() {
                 <GraphicSplitRight 
                     graphic={PromptSuggs}
                     alt={"Driver AI can provide suggestions to improve user prompts"}
-                    // unoptimized={true}
-                    priority={true}
                     title={"Prompt Enhancement"}
                     desc={"Writing good prompts for an LLM can be difficult and unintuitive. \
                             For users without experience in working with LLMs, we provide suggestions for better prompts \
@@ -129,8 +125,6 @@ function DriverAI() {
                 <GraphicSplitLeft 
                     graphic={Keywords}
                     alt={"Users can select keywords for a more specific gneeration or use given example prompts."}
-                    // unoptimized={true}
-                    priority={true}
                     title={"Keywords and Suggested Prompts"}
                     desc={"The most commonly used prompts are just 2 clicks away under Examples menu. \
                             If users want to tailor their generation, they can opt to select keywords that would subtly shift the generated documentation."}
@@ -139,8 +133,6 @@ function DriverAI() {
                 <GraphicSplitRight 
                     graphic={DocEdit}
                     alt={"Users can edit directly in document. Highlighting text will bring up quick actions, or an option for a custom prompt"}
-                    // unoptimized={true}
-                    priority={true}
                     title={"Document Edits"}
                     desc={"Common edits are made just one click away. \
                             If users have more speciifc changes in mind, they can also type directly to Driver AI. \

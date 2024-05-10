@@ -163,8 +163,6 @@ function ABTest() {
                 <Image 
                     src={ButtonGif} 
                     alt="Modified Button Design"
-                    // unoptimized={true}
-                    priority={true}
                     style={{
                         width: '100%',
                         height: 'auto',
