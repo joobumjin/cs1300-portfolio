@@ -1,16 +1,9 @@
 import "../components/CasePage.css"
-import Image from 'next/image'
 import HeaderGraphic from '../../../public/assets/Portfolio/PortfolioThumb.png'
 import Grid from '@mui/material/Unstable_Grid2';
-import {DocHeader, GridCard, GraphicSplitLeft, GraphicSplitRight, BeforeAfter} from '../components/CaseComponents'
-import NewDocGraphic from '../../../public/assets/Driver_AI/BlankDoc.png'
-import GuidedStart from '../../../public/assets/Driver_AI/GuidedStart.gif'
-import Sketch1 from '../../../public/assets/Driver_AI/sketches/flow1.JPG'
-import Sketch2 from '../../../public/assets/Driver_AI/sketches/flow2.JPG'
-import LoFiHome from '../../../public/assets/Driver_AI/lofiv1/p1.png'
-import LoFiGuided from '../../../public/assets/Driver_AI/lofiv1/p2.png'
-import LoFiSuggests from '../../../public/assets/Driver_AI/lofiv1/p3.png'
-import LoFiV2Suggests from '../../../public/assets/Driver_AI/PromptSugsV2.png'
+import {DocHeader, GridCard, GraphicSplitLeft, GraphicSplitRight} from '../components/CaseComponents'
+import HomePage from '../../../public/assets/Portfolio/home.png'
+import CardAnim from '../../../public/assets/Portfolio/CardAnim.gif'
 
 function PortfolioDev() {
     return (
@@ -85,7 +78,7 @@ function PortfolioDev() {
             
             <div className="visuals">
                 <GraphicSplitRight 
-                    graphic={NewDocGraphic}
+                    graphic={HomePage}
                     alt={"Portfolio Home page"}
                     title={"Simple Home"}
                     desc={"I wanted to put a majority of the focus on my work. \
@@ -93,7 +86,7 @@ function PortfolioDev() {
                 />
 
                 <GraphicSplitLeft 
-                    graphic={GuidedStart}
+                    graphic={CardAnim}
                     alt={"Case Study Card Design"}
                     title={"Attention on Case Studies"}
                     desc={"Front-end projects convey so much information just from a quick glance at their interface. \
@@ -114,128 +107,26 @@ function PortfolioDev() {
                 </p>
             </div>
 
-            <div className="section ">
+            <div className="section takeaways">
                 <h2 className="title">
-                    Design Process
+                    Future Plans
                 </h2>
+                
+                <h3>
+                    Updates
+                </h3>
+                <p className="main">
+                    The first point of improvement is naturally in simply keeping it up to date. As I get more expeirence under my belt, I can't wait to detail my work here.
+                </p>
 
                 <h3>
-                    Sketches
+                    Themeing
                 </h3>
-
-                <p classname="main">
-                    I ideated and visualized potential user flows and interfaces through sketches. 
-                    Each sketch consists of at least 4 frames that connect together into a user flow.
-                    Between my sketches and sketches contributed from my teammates, many components of our final product were established in this early stage.
-                </p>
-            </div>
-
-            <Grid className="splitPanel" container spacing={0}>
-                <Grid className="panelGraphic" xs={12} sm={12} md={6}>
-                    <div className="graphic">
-                        <Image 
-                            src={Sketch1} 
-                            alt={"My first user-flow sketch"}
-                            style={{
-                                width: 'auto',
-                                height: '70vh',
-                            }}              
-                        />
-                    </div>
-                </Grid>
-                <Grid className="panelGraphic" xs={12} sm={12} md={6}>
-                    <div className="graphic">
-                        <Image 
-                            src={Sketch2} 
-                            alt={"My second user-flow sketch"}
-                            style={{
-                                width: 'auto',
-                                height: '70vh',
-                            }}              
-                        />
-                    </div>
-                </Grid>
-            </Grid>
-
-            <div className="contSection">
-                <h3>
-                    Low Fidelity Prototypes & Feedback
-                </h3>
-
                 <p className="main">
-                    Building on ideas from initial sketches, we developed our first Lo-Fi prototype in Figma.
+                    With some more time, I'd also love to experiment with aesthetics and designs that are too time-intensive for this project's turn around. 
                 </p>
 
-                <p className="main">
-                    One of the first flows I focused on was for enhancing user provided prompts. 
-                    Finding the right prompt for good LLM outputs can be a very convoluted process, so I attempted to assist that process through Driver AI.
-                </p>
             </div>
-
-            <div className="graphic">
-                <Image 
-                    src={LoFiHome} 
-                    alt={"The Home Page in our First LoFi"}
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                      }}              
-                />
-            </div>
-
-            <div className="contSection">
-                <p className="main">
-                    We envisioned that a user could click the star button and see several suggestions for improved prompts.
-                    During critique sessions, we got two major points of valuable feedback for this interface:
-                </p>
-
-                <uo>
-                    <li>The star symbol was too generic and didn't clearly communicate its purpose.</li>
-                    <li>Multiple suggestions might be harder to comprehend</li>
-                </uo>
-            </div>
-
-            <BeforeAfter 
-                beforeGraphic={LoFiSuggests}
-                beforeAlt={"Prompts Suggestions in our First LoFi"}
-                beforeDesc={"We provided multiple alternate prompts generated by AI, and users could either click to edit and re-generate the prompts, or select any of the available prompts."}
-                afterGraphic={LoFiV2Suggests}
-                afterAlt={"Prompts Suggestions in our Second LoFi"}
-                afterDesc={"We streamlined the experience to only have one option. We also chose more intuitive button designs and clarified that users could click to edit text."}
-            />
-
-            <div className="contSection">
-                <p className="main">
-                    I also spent a lot of time developing the guided, new user workflow. I'll refer to it as the "Don't Know Where to Start?" flow, because of the button name. 
-                    The original LoFi had simply just used the questions to select relevant keywords and a basic starter prompt:
-                </p>
-            </div>
-
-            <div className="crossGraphic">
-                <Image 
-                    src={LoFiGuided} 
-                    alt={"The Home Page in our First LoFi"}
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                      }}              
-                />
-            </div>
-
-            <div className="contSection">
-                <p className="main">
-                    As demonstrated in the final designs, a lot of feedback and subsequent changes have reshaped this process. 
-                    Ultimately, I decided that this user flow, which is targetted at unfamiliar users, should consist of a set of simple questions, and should thus replace the entire process and end with a generated document.
-                </p>
-            </div>
-
-            <div className="contSection">
-                <p className="main">
-                    Throughout this process, we imagined, realized, and iterated upon our flows through invaluable feedback from peers, instructors, and even a founding engineer at Driver AI.
-                    We strongly believe that this has undoubtedly contributed to a much improved final prototype.
-                </p>
-            </div>
-
 
             <div className="section takeaways">
                 <h2 className="title">
@@ -243,19 +134,22 @@ function PortfolioDev() {
                 </h2>
                 
                 <p className="main">
-                    My experience with iteratively designing this product for Driver AI truly enriched my skills in designing and realizing interfaces.
+                    The process of building this portfolio went beyond a simple coding exercise and challenged me to puzzle out how to cleanly and quickly implement my vision of the project.
                 </p>
 
                 <Grid container spacing={4}>
                     <GridCard 
                         index="01"
-                        header="Feedback is Invaluable"
-                        text="Throughout this process, we had the gift of receiving feedback at every step. Each critiquing session always illuminated alternative perspectives that consistently helped me design and improve upon my work."
+                        header="Maintain a Clean Codebase"
+                        text="The accelerated timeline of this project really highlighted the need to work efficiently.
+                                Though keeping my code clean had a higher upfront investment of time, I was able to save much more time in later stages of the project."
                     />
                     <GridCard 
                         index="02"
-                        header="Cooperation is Key"
-                        text="Working with teammates truly multiplied my productivity output and enabled us to output a product with higher quality and faster turn arounds."
+                        header="Documentation is Your Best Friend"
+                        text="With practically infinite libraires available for endless purposes, 
+                                it can be easy to lose track of how to use a component and what best practices for that library might look like.
+                                I found that my code and efficiency in coding benefited greatly from a quick check with documentation."
                     />
                 </Grid>
 
