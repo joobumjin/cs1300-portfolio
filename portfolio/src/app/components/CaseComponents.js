@@ -1,7 +1,6 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Image from 'next/image'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import Button from '@mui/material/Button';
 
 function DocHeader(props) {
     return (
@@ -54,4 +53,97 @@ function GridCard(props) {
     );
 }
 
-export {DocHeader, GridCard};
+function GraphicSplitLeft(props) {
+    return (
+        <Grid className="splitPanel" container spacing={4}>
+            <Grid className="panelGraphic" xs={12} sm={12} md={8}>
+                <div className="graphic">
+                    <Image 
+                        src={props.graphic} 
+                        alt={props.alt}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}              
+                    />
+                </div>
+            </Grid>
+            <Grid className="panelText" xs={12} sm={12} md={4}>
+                <p className="panelTitle">
+                    {props.title}
+                </p>
+                <p className="panelDesc">
+                    {props.desc}
+                </p>
+            </Grid>
+        </Grid>
+    );
+}
+
+function GraphicSplitRight(props) {
+    return (
+        <Grid className="splitPanel" container spacing={4}>
+            <Grid className="panelText" xs={12} sm={12} md={4}>
+                <p className="panelTitle">
+                    {props.title}
+                </p>
+                <p className="panelDesc">
+                    {props.desc}
+                </p>
+            </Grid>
+            <Grid className="panelGraphic" xs={12} sm={12} md={8}>
+                <div className="graphic">
+                    <Image 
+                        src={props.graphic} 
+                        alt={props.alt}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}              
+                    />
+                </div>
+            </Grid>
+        </Grid>
+    );
+}
+
+function BeforeAfter(props) {
+    return (
+        <Grid className="splitPanel" container spacing={4}>
+            <Grid className="baPanel" xs={12} sm={12} md={6}>
+                <div className="graphic">
+                    <Image 
+                        src={props.beforeGraphic} 
+                        alt={props.beforeAlt}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}              
+                    />
+                </div>
+                <h3>Before</h3>
+                <p>
+                    {props.beforeDesc}
+                </p>
+            </Grid>
+            <Grid className="baPanel" xs={12} sm={12} md={6}>
+                <div className="graphic">
+                    <Image 
+                        src={props.afterGraphic} 
+                        alt={props.afterAlt}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}              
+                    />
+                </div>
+                <h3>After</h3>
+                <p>
+                    {props.afterDesc}
+                </p>
+            </Grid>
+        </Grid>
+    );
+}
+
+export {DocHeader, GridCard, GraphicSplitLeft, GraphicSplitRight, BeforeAfter};

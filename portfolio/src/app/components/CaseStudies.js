@@ -1,7 +1,8 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Image from 'next/image'
-import Button from '@mui/material/Button';
 import ABThumb from '../../../public/assets/AB_Test/ABThumb.png'
+import DriverThumb from '../../../public/assets/Driver_AI/FrontGraphic.png'
+import PortfolioThumb from '../../../public/assets/Portfolio/PortfolioCard.png'
 import './CaseStudies.css'
 
 function CaseCard(props) {
@@ -13,8 +14,8 @@ function CaseCard(props) {
                         src={props.graphic} 
                         alt={props.alt}
                         style={{
-                            width: 'auto',
-                            height: '100%',
+                            width: '100%',
+                            height: 'auto',
                         }}              
                     />
                 </div>
@@ -38,7 +39,7 @@ function CaseStudies() {
             </div>
             <div className = "grid">
                 <Grid container spacing={8}>
-                    <Grid item sm={12} md={6}>
+                    <Grid sm={12} md={6}>
                         <CaseCard 
                             title={"AB Testing"}
                             link={"ab_test"}
@@ -46,11 +47,20 @@ function CaseStudies() {
                             alt={"Thumbnail for AB Testing Page"}
                         />
                     </Grid>
-                    <Grid item sm={12} md={6}>
+                    <Grid sm={12} md={6}>
                         <CaseCard 
                             title={"Driver AI"}
                             link={"driver_ai"}
+                            graphic={DriverThumb}
                             alt={"Thumbnail for Driver AI Page"}
+                        />
+                    </Grid>
+                    <Grid sm={12} md={6}>
+                        <CaseCard 
+                            title={"Portfolio Development"}
+                            link={"portfolio"}
+                            graphic={PortfolioThumb}
+                            alt={"Thumbnail for Portfolio Development Page"}
                         />
                     </Grid>
                 </Grid>

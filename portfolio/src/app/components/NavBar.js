@@ -8,9 +8,9 @@ function NavBar() {
                     <a href="/">Bumjin Joo</a>
                 </div>
                 <div className="menu">
-                    <a href="#work">Work</a>
-                    <a href="">Resume</a>               
-                    <a href="/.about_me">About Me</a>               
+                    {/* <a href="#work">Work</a>
+                    <a href="resume">Resume</a>                */}
+                    {/* <a href="/.about_me">About Me</a>                */}
                 </div>
             </div>
         </div>
