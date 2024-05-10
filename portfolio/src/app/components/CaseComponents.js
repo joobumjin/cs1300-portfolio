@@ -67,7 +67,7 @@ function GraphicSplitLeft(props) {
                             width: '100%',
                             height: 'auto',
                         }}        
-                        unoptimized = {props.unoptimized}      
+                        priorty = {props.priorty}      
                     />
                 </div>
             </Grid>
@@ -103,7 +103,7 @@ function GraphicSplitRight(props) {
                             width: '100%',
                             height: 'auto',
                         }}
-                        unoptimized = {props.unoptimized}      
+                        priorty = {props.priorty}      
                     />
                 </div>
             </Grid>
@@ -123,7 +123,7 @@ function BeforeAfter(props) {
                             width: '100%',
                             height: 'auto',
                         }}     
-                        unoptimized = {props.unoptimized}      
+                        priorty = {props.priorty}      
                     />
                 </div>
                 <h3>Before</h3>
@@ -140,7 +140,8 @@ function BeforeAfter(props) {
                             width: '100%',
                             height: 'auto',
                         }} 
-                        unoptimized = {props.unoptimized}      
+                        // unoptimized = {props.unoptimized}
+                        priorty = {props.priorty}      
                     />
                 </div>
                 <h3>After</h3>
