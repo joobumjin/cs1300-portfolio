@@ -8,7 +8,7 @@
 .docHeader {
     margin-top: 8vh;
     width: 90%;
-    height: 65vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +19,7 @@
     .graphic{
         width: 95%;
         margin: auto;
+        height: fit-content;
     }
 }
 
