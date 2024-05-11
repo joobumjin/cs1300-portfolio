@@ -98,6 +98,7 @@ function GraphicSplitRight(props) {
                     <Image 
                         src={props.graphic} 
                         alt={props.alt}
+                        quality={props.quality}
                         style={{
                             width: '100%',
                             height: 'auto',
@@ -117,6 +118,7 @@ function BeforeAfter(props) {
                     <Image 
                         src={props.beforeGraphic} 
                         alt={props.beforeAlt}
+                        quality={props.quality}
                         style={{
                             width: '100%',
                             height: 'auto',
@@ -133,6 +135,7 @@ function BeforeAfter(props) {
                     <Image 
                         src={props.afterGraphic} 
                         alt={props.afterAlt}
+                        quality={props.quality}
                         style={{
                             width: '100%',
                             height: 'auto',
