@@ -126,6 +126,13 @@ function PortfolioDev() {
                    {"With some more time, I'd also love to experiment with aesthetics and designs that are too time-intensive for this project's turn around. "}
                 </p>
 
+                <h3>
+                    Technical Optimization
+                </h3>
+                <p className="main">
+                   {"Performance is crucial for a smooth user experience. Given some more time, I'd love to update a lot of my visual components for optimized components"}
+                </p>
+
             </div>
 
             <div className="section takeaways">
